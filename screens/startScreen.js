@@ -3,7 +3,7 @@ import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 
 export default function StartScreen({ navigation }) {
   return (
-    <View>
+    <View style={{flex: 1}}>
       <View style={styles.container}>
         <Image source={require('../assets/casual_dog.png')} style={styles.imagem}></Image>
         <Text style={styles.titulo}>Ótimo dia!</Text>
@@ -25,13 +25,11 @@ export default function StartScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     marginTop: 200,
-    flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
   },
   container2: {
     paddingTop: 150,
-    flex: 1,
     justifyContent: 'center',
     alignItems: 'center'
   },
