@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { Image, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
-import { Ionicons } from '@expo/vector-icons'; // Import icons from Expo
+import { Ionicons } from '@expo/vector-icons'; 
 
 export default function LoginScreen({ navigation }) {
   const [passwordVisible, setPasswordVisible] = useState(false); // State to toggle password visibility
 
   return (
-    <View>
+    <View style={{backgroundColor: 'white', height: 10000}}>
       <View style={styles.container}>
         <Text style={styles.titulo}>Acessar</Text>
         <Text style={styles.subtitulo}>com E-mail e senha</Text>
