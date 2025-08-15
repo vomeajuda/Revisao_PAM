@@ -54,6 +54,13 @@ export default function LoginScreen({ navigation }) {
             <Text style={{ color: 'black' }}>Cadastrar</Text>
           </Pressable>
         </View>
+        <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 40 }}>
+          <Text>Ou continue com</Text>
+        </View>
+        <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 40, gap: 40 }}>
+          <Image source={require('../assets/Google.png')} style={{ width: 70, height: 70 }} />
+          <Image source={require('../assets/Facebook.png')} style={{ width: 70, height: 70 }} />
+        </View>
       </View>
     </View>
   );
